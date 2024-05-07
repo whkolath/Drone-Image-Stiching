@@ -5,21 +5,10 @@ import threading
 from queue import Queue
 from math import sqrt
 
-DATASET = "data1"
-ROWS = 10
-COLUMNS = 3
 
-# DATASET = "data2"
-# ROWS = 10
-# COLUMNS = 3
-
-# DATASET = "data3"
-# ROWS = 8
-# COLUMNS = 9
-
-# DATASET = "data4"
-# ROWS = 12
-# COLUMNS = 13
+DATASET = "data3"
+ROWS = 8
+COLUMNS = 9
 
 SCALE_FACTOR = 4
 
@@ -145,7 +134,7 @@ def stich(image_1: image, image_2: image, orientation):
 
 
 def main():
-    files = glob.glob("Input/" + DATASET + "/*.JPG")
+    files = glob.glob(DATASET + "/*.JPG")
     images = []
 
     queue = Queue()
