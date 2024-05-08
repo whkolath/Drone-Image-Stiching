@@ -184,7 +184,7 @@ def main():
     for i in range(1, ROWS):
         result = stich(result, sorted_results[i], "vertical")
 
-    cv2.imwrite("Output/" + DATASET + ".JPG", result.image)
+    cv2.imwrite(DATASET + ".JPG", result.image)
 
 
 if __name__ == "__main__":
