@@ -6,7 +6,7 @@ from queue import Queue
 from math import sqrt
 
 
-DATASET = "data3"
+DATASET = "data"
 ROWS = 8
 COLUMNS = 9
 
